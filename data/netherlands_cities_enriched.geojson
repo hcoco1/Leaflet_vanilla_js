@@ -1,0 +1,187 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name": "Amsterdam", "population": 905234, "rank": 1, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.895168, 52.370216] } },
+    { "type": "Feature", "properties": { "name": "Rotterdam", "population": 651446, "rank": 2, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.47917, 51.9225] } },
+    { "type": "Feature", "properties": { "name": "The Hague", "population": 544766, "rank": 3, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.3007, 52.0705] } },
+    { "type": "Feature", "properties": { "name": "Utrecht", "population": 361924, "rank": 4, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.12142, 52.09074] } },
+    { "type": "Feature", "properties": { "name": "Eindhoven", "population": 238478, "rank": 5, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.46973, 51.44164] } },
+    { "type": "Feature", "properties": { "name": "Tilburg", "population": 226332, "rank": 6, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.09131, 51.55579] } },
+    { "type": "Feature", "properties": { "name": "Groningen", "population": 233218, "rank": 7, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [6.5665, 53.2194] } },
+    { "type": "Feature", "properties": { "name": "Almere", "population": 221522, "rank": 8, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.22583, 52.35079] } },
+    { "type": "Feature", "properties": { "name": "Breda", "population": 184286, "rank": 9, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.78517, 51.57192] } },
+    { "type": "Feature", "properties": { "name": "Nijmegen", "population": 179405, "rank": 10, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.85278, 51.8425] } },
+    { "type": "Feature", "properties": { "name": "Enschede", "population": 158919, "rank": 11, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [6.89672, 52.22154] } },
+    { "type": "Feature", "properties": { "name": "Haarlem", "population": 161265, "rank": 12, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.64622, 52.38739] } },
+    { "type": "Feature", "properties": { "name": "Arnhem", "population": 159265, "rank": 13, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.91238, 52.01158] } },
+    { "type": "Feature", "properties": { "name": "Amersfoort", "population": 157964, "rank": 14, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.3878, 52.15606] } },
+    { "type": "Feature", "properties": { "name": "Apeldoorn", "population": 164212, "rank": 15, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.95803, 52.21116] } },
+    { "type": "Feature", "properties": { "name": "Hertogenbosch", "population": 155053, "rank": 16, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [5.29816, 51.68778] } },
+    { "type": "Feature", "properties": { "name": "Zwolle", "population": 132742, "rank": 17, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [6.09556, 52.5168] } },
+    { "type": "Feature", "properties": { "name": "Leiden", "population": 124899, "rank": 18, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.49701, 52.16011] } },
+    { "type": "Feature", "properties": { "name": "Dordrecht", "population": 118079, "rank": 19, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.661, 51.8133] } },
+    { "type": "Feature", "properties": { "name": "Zoetermeer", "population": 125782, "rank": 20, "featureType": "city" }, "geometry": { "type": "Point", "coordinates": [4.49401, 52.06023] } },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Randstad Ring",
+        "featureType": "polyline",
+        "type": "corridor",
+        "color": "#1556ce",
+        "description": "The iconic horseshoe megalopolis linking Holland's four largest cities"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [4.895168, 52.370216],
+          [4.64622,  52.38739],
+          [4.3007,   52.0705],
+          [4.49701,  52.16011],
+          [4.49401,  52.06023],
+          [4.47917,  51.9225],
+          [4.661,    51.8133],
+          [4.78517,  51.57192],
+          [5.09131,  51.55579],
+          [5.29816,  51.68778],
+          [5.12142,  52.09074],
+          [5.22583,  52.35079],
+          [4.895168, 52.370216]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Northern Rail Corridor",
+        "featureType": "polyline",
+        "type": "corridor",
+        "color": "#1556ce",
+        "description": "Main rail artery from Amsterdam to Groningen via Almere and Zwolle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [4.895168, 52.370216],
+          [5.22583,  52.35079],
+          [6.09556,  52.5168],
+          [6.5665,   53.2194]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Southern Brabant Corridor",
+        "featureType": "polyline",
+        "type": "corridor",
+        "color": "#1556ce",
+        "description": "East–west corridor connecting Brabant cities"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.12142,  52.09074],
+          [5.29816,  51.68778],
+          [5.09131,  51.55579],
+          [5.46973,  51.44164],
+          [4.78517,  51.57192],
+          [4.661,    51.8133]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eastern Corridor",
+        "featureType": "polyline",
+        "type": "corridor",
+        "color": "#1556ce",
+        "description": "Connecting the Gelderse cities from Utrecht to Enschede"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.12142,  52.09074],
+          [5.3878,   52.15606],
+          [5.95803,  52.21116],
+          [5.91238,  52.01158],
+          [5.85278,  51.8425],
+          [6.89672,  52.22154]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Randstad Metropolitan Area",
+        "featureType": "polygon",
+        "type": "region",
+        "fillColor": "#16a322",
+        "description": "Core economic and political heart of the Netherlands — home to ~8 million people"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [4.2,  52.48],
+          [5.0,  52.55],
+          [5.45, 52.38],
+          [5.35, 52.0],
+          [5.2,  51.75],
+          [4.95, 51.7],
+          [4.55, 51.75],
+          [4.1,  51.92],
+          [4.05, 52.15],
+          [4.2,  52.48]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brabant Cities Region",
+        "featureType": "polygon",
+        "type": "region",
+        "fillColor": "#16a322",
+        "description": "Prosperous southern innovation belt — Brainport Eindhoven and its neighbours"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [4.55, 51.62],
+          [5.0,  51.45],
+          [5.65, 51.35],
+          [5.75, 51.55],
+          [5.55, 51.75],
+          [5.15, 51.82],
+          [4.85, 51.78],
+          [4.55, 51.62]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Netherlands Region",
+        "featureType": "polygon",
+        "type": "region",
+        "fillColor": "#16a322",
+        "description": "Gelderland and Overijssel — rivers, forests, and cross-border links to Germany"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [5.7,  52.6],
+          [6.6,  52.7],
+          [7.1,  52.38],
+          [7.0,  52.0],
+          [6.6,  51.82],
+          [5.65, 51.85],
+          [5.7,  52.25],
+          [5.7,  52.6]
+        ]]
+      }
+    }
+  ]
+}

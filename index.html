@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Netherlands – Web GIS Demo</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.css">
+
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-map-location-dot" style="color:#2563eb;font-size:18px;"></i>
+        <h1>Netherlands – Major Cities &amp; Regions</h1>
+    </header>
+
+    <input id="searchBox" type="text" placeholder="Search city..." style="
+    position:absolute;
+    top:70px;
+    left:50px;
+    z-index:1000;
+    padding:8px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    width:200px;
+    ">
+
+    <div id="filterBox" style="
+    position:absolute;
+    top:120px;
+    left:50px;
+    z-index:1000;
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    font-family:sans-serif;
+    ">
+        <label><strong>Filter by Population</strong></label><br>
+        <input id="populationSlider" type="range" min="0" max="1000000" step="50000" value="0">
+        <div id="populationValue">0</div>
+    </div>
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS (FIRST) -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- MarkerCluster JS (SECOND) -->
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+    <!-- BeautifyMarker (THIRD) -->
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8d96376049.js"></script>
+
+    <!-- YOUR JS (LAST ALWAYS) -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
