@@ -2,7 +2,9 @@
 <html>
 
 <head>
+
     <title>Netherlands – Web GIS Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -21,28 +23,9 @@
         <h1>Netherlands – Major Cities &amp; Regions</h1>
     </header>
 
-    <input id="searchBox" type="text" placeholder="Search city..." style="
-    position:absolute;
-    top:70px;
-    left:50px;
-    z-index:1000;
-    padding:8px;
-    border-radius:6px;
-    border:1px solid #ccc;
-    width:200px;
-    ">
+ <input id="searchBox" class="ui-box" type="text" placeholder="Search city...">
 
-    <div id="filterBox" style="
-    position:absolute;
-    top:120px;
-    left:50px;
-    z-index:1000;
-    background:white;
-    padding:10px;
-    border-radius:8px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.2);
-    font-family:sans-serif;
-    ">
+<div id="filterBox" class="ui-box">
         <label><strong>Filter by Population</strong></label><br>
         <input id="populationSlider" type="range" min="0" max="1000000" step="50000" value="0">
         <div id="populationValue">0</div>

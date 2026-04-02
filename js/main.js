@@ -21,7 +21,12 @@ const STYLE_CONFIG = {
 // MAP INITIALIZATION
 // ===============================
 function initMap() {
-    const map = L.map('map').setView(CONFIG.center, CONFIG.zoom);
+    const map = L.map('map', {
+    zoomControl: false // disable default position
+}).setView(CONFIG.center, CONFIG.zoom);
+
+// Move zoom button to bottom right (thumb-friendly)
+L.control.zoom({ position: 'bottomright' }).addTo(map);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap'
@@ -144,7 +149,7 @@ function addLegend(map) {
         return div;
     };
 
-    legend.addTo(map);
+    //legend.addTo(map);
 }
 
 // ===============================
@@ -259,7 +264,7 @@ async function loadData(map) {
 
         L.control.layers(null, overlayMaps, {
             collapsed: false,
-            position: 'topright'
+            position:'bottomleft'
         }).addTo(map);
 
         addLegend(map);
